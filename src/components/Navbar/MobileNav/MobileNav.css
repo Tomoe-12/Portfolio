@@ -1,0 +1,28 @@
+.mobile-menu {
+  @apply w-[100vw] h-[100vh]  bg-[rgba(0,0,0,0.3)] fixed left-0 top-0 opacity-0 transition-all duration-300 ease-linear;
+  z-index: 999 !important;
+  box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
+  transform: translateX(-100vw);
+  }
+
+.mobile-menu-container {
+  @apply w-[60vw] h-lvh bg-[#342864] p-[2rem];
+}
+
+.mobile-menu.active {
+  @apply opacity-100 translate-x-0;
+}
+
+.mobile-menu img {
+  @apply mb-[3rem];
+}
+
+.mobile-menu ul {
+  @apply flex flex-col gap-[2rem]
+}
+
+@media (max-width: 769px) {
+    .moblie-menu{
+        @apply flex
+    }
+}

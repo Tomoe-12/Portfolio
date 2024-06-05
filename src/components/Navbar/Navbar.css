@@ -1,0 +1,75 @@
+.nav-wrapper {
+  @apply bg-[rgba(0,0,0,0.1)] py-[0.5rem] px-0  sticky z-[30] backdrop-blur-[50px];
+}
+.nav-content {
+  @apply max-w-[1300px] flex items-center justify-between py-[1rem] px-0 my-0 mx-auto;
+}
+
+.logo {
+  @apply w-[12rem] h-auto;
+}
+
+.nav-content ul {
+  @apply flex items-center gap-[0.5rem];
+}
+
+.nav-content ul li {
+  @apply my-0 mx-[1.5rem];
+}
+
+.menu-item {
+  @apply text-[0.9rem] font-medium text-[#fff] relative cursor-pointer;
+}
+
+.menu-item::before {
+  @apply content-[''] absolute w-[2rem] h-[0.2rem] bg-gradient-to-t from-[#a993fe] to-[#7e61e7] rounded-[0.5rem] bottom-[-0.6rem] opacity-0  translate-x-[-1.5rem] transition-all duration-300 ease-linear;
+}
+
+.menu-item:hover::before {
+  @apply w-full  translate-x-0 opacity-100;
+}
+
+.contact-btn {
+  outline: 1.5px solid transparent;
+  background: Linear-gradient(90deg, #a993fe, #7e61e7);
+  @apply text-[0.9rem] font-medium flex items-center justify-center text-[#fff]   py-[0.6rem] px-[2rem] border-none  rounded-[0.2rem] cursor-pointer transition-all duration-300 ease-linear;
+}
+
+.contact-btn:hover {
+  background: #000;
+  @apply text-[#a993fe];
+  outline: 1.5px solid #a993fe;
+}
+
+.menu-btn {
+  background: Linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+  @apply w-[2.5rem] h-[2.5rem] hidden items-center justify-center border-none rounded-[0.4rem] text-[#fff]  leading-[0] cursor-pointer transition-all duration-300 ease-linear ;
+}
+
+.menu-btn:hover {
+  background: #000;
+  color : #a993fe;
+  border : 1px solid #a993fe;
+  /* @apply text-[#a993fe] border border-[#a993fe]; */
+}
+
+@media(max-width: 425px){
+.logo{
+    @apply w-[10rem] h-auto
+}
+}
+
+@media (max-width: 769px) {
+  .menu-btn {
+    @apply block;
+  }
+  .nav-content ul {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 1325px) {
+  .nav-wrapper {
+    @apply py-0 px-[2rem];
+  }
+}
