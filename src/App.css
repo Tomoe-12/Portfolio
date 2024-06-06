@@ -1,0 +1,9 @@
+.container {
+  @apply max-w-[1300px] my-0 mx-auto relative;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    @apply py-0 px-[1.5rem];
+  }
+}
