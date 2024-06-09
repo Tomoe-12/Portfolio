@@ -1,0 +1,47 @@
+.skills-info-card{
+    @apply min-h-[23rem] rounded-[0.65rem] border-[1.5px] border-[#6751b9] bg-[rgba(22,17,47,0.398)]
+}
+
+.skills-info-card h6{
+    @apply text-[1.2rem] font-medium py-[0.8rem] px-8 bg-gradient-to-b from-[#ac96ff] to-[#7c5fe6] bg-clip-text border-b-[1.5px] border-b-[#6751b9];
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.skills-info-content{
+    @apply p-8
+}
+
+.skill-info{
+    @apply flex items-center justify-between
+}
+
+.skill-info p{
+    @apply text-[1rem] font-medium
+}
+
+.skill-info .percentage {
+    @apply text-[#dd8cfa]
+}
+
+.skill-progress-bg{
+    @apply w-full h-2 bg-[#382e68] rounded-lg my-4 mx-0 overflow-hidden
+}
+
+.skill-progress {
+    @apply w-0 h-2 bg-gradient-to-r from-[#aa94fe] from-[-50%] to-[#7d60e6] to-[50%] rounded-lg transition-all duration-300 ease-linear;
+}
+
+@media (max-width:1025px){
+    .skills-info-card h6 {
+        @apply text-[1.1rem]
+    }
+
+    .skill-info p{
+        @apply text-[0.9rem]
+    }
+
+    .skills-info-content {
+        @apply p-[1.5rem]
+    }
+}

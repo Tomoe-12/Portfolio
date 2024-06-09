@@ -1,0 +1,72 @@
+.skills-container {
+  @apply my-[4rem] mx-0 relative;
+}
+
+.skills-container::after,
+.skills-container::before {
+  @apply content-[''] w-[28rem] h-[28rem] bg-[#7c66e3] absolute -z-[1] blur-[200px];
+}
+
+.skills-container::after {
+  @apply -top-12 -left-20;
+}
+
+.skills-container::before {
+  @apply bg-[#9e51b9] bottom-0 right-0;
+}
+
+.skills-container h5 {
+  @apply text-[1.5rem] font-semibold mb-[3.5rem];
+}
+
+.skills-content {
+  @apply flex items-center gap-12;
+}
+
+.skills {
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  @apply flex-1 grid;
+}
+
+.skills-info {
+  @apply flex-1;
+}
+
+@media (max-widht: 1025px) {
+  .skills {
+    @apply pl-4;
+  }
+
+  .skills,
+  .skills-content {
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-content {
+    @apply flex-col-reverse gap-12;
+  }
+
+  .skills,
+  .skills-info {
+    @apply w-full;
+  }
+
+  .skills-container h5 {
+    @apply text-[1.3rem] mb-8;
+  }
+
+  .skills-container::after,
+  .skills-container::before {
+    @apply w-72 h-72;
+  }
+}
+
+@media(max-width : 600px){
+    .skills-container{
+        @apply p-0 
+    }
+
+}

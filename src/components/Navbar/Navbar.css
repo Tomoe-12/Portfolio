@@ -1,8 +1,8 @@
 .nav-wrapper {
-  @apply bg-[rgba(0,0,0,0.1)] py-[0.5rem] px-0  sticky z-[30] backdrop-blur-[50px];
+  @apply bg-[rgba(0,0,0,0.1)] py-[0.5rem] px-0 top-0 sticky z-[30] backdrop-blur-[50px];
 }
 .nav-content {
-  @apply max-w-[1300px] flex items-center justify-between py-[1rem] px-0 my-0 mx-auto;
+  @apply max-w-[1300px] flex items-center justify-between py-[1rem] px-0 my-0 mx-auto ;
 }
 
 .logo {

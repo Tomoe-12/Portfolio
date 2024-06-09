@@ -15,7 +15,6 @@ const Navbar = () => {
             <nav className='nav-wrapper'>
                 <div className='nav-content'>
                     <img className='logo' src='' alt="" />
-
                     <ul>
                         <li>
                             <a className='menu-item' >Home</a>

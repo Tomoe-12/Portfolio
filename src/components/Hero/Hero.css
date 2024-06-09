@@ -89,7 +89,7 @@
 
   .hero-content h2,
   .hero-content p {
-    @apply w-auto items-center;
+    @apply w-auto text-center;
   }
 
   .hero-container::after,
@@ -107,12 +107,16 @@
 }
 
 @media (max-width: 600px) {
+
+  .hero-content h2 , .hero-content p {
+    @apply text-center;
+  }
   .hero-content h2 {
-    @apply text-[2.2rem] leading-[3rem];
+    @apply text-[2.2rem] leading-[3rem] ;
   }
 
   .hero-content p {
-    @apply text-[0.8rem] leading-[1.3rem];
+    @apply text-[0.8rem] leading-[1.3rem] ;
   }
 
   .hero-img {
@@ -128,10 +132,10 @@
   }
 
   .tech-icon {
-    @apply min-w-[3.3rem] min-h-[3.3rem];
+    @apply min-w-[4rem] min-h-[3.3rem];
   }
 
   .tech-icon img {
-    @apply min-w-[2rem];
+    @apply w-[2rem];
   }
 }

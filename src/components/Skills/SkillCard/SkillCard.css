@@ -1,0 +1,46 @@
+.skills-card {
+  @apply rounded-[0.65rem] border-[1.5px] border-[#6852ba] p-[2.5rem] text-center bg-[rgba(22,17,47,0.399)]  relative cursor-pointer transition-all duration-300 ease-linear;
+}
+
+.skills-card:hover,
+.skills-card.active {
+  @apply bg-gradient-to-b from-[#aa94fe] to-[#7c5fe6];
+}
+
+.skills-card span {
+  @apply text-[1.3rem] font-medium;
+}
+
+.skill-icon {
+  @apply w-16 h-16 flex items-center justify-center bg-[#2a2252] rounded-[0.65rem] border-[1.5px] border-[#6852ba] absolute top-[-1rem] left-[-1rem];
+}
+
+.skill-icon img {
+  @apply w-[2.4rem] h-auto object-contain;
+}
+
+@media (max-width: 1025px) {
+  .skills-card {
+    @apply p-8;
+  }
+
+  .skills-card span {
+    @apply text-base;
+  }
+
+  .skill-icon {
+    @apply w-12 h-12;
+  }
+
+  .skill-icon img {
+    @apply w-[1.8rem];
+  }
+}
+
+@media(max-width:768px){
+    .skills-card span {
+        @apply text-[0.9rem]
+    }
+
+
+}
