@@ -1,0 +1,48 @@
+.experience-container {
+  @apply my-16 mx-0 relative;
+}
+
+.experience-container h5 {
+  @apply text-2xl font-semibold mb-12;
+}
+
+.arrow-left,
+.arrow-right {
+  @apply w-[2.2rem] h-[2.2rem] flex items-center justify-center text-[#6751b9] rounded-[0.65rem] border-[1.5px] border-[#6751b9] bg-[#130f2a] absolute top-[55%] z-[2] cursor-pointer;
+}
+
+.aroow-left span,
+.arrow-right span {
+  @apply text-[2rem] font-medium;
+}
+
+.arrow-left {
+  @apply -left-8;
+}
+
+.arrow-right {
+  @apply -right-8;
+}
+
+@media (max-width: 1025px) {
+  .arrow-left {
+    @apply left-0;
+  }
+  .arrow-right {
+    @apply right-0;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-container h5 {
+    @apply text-[1.3rem] mb-8;
+  }
+
+  .arrow-left {
+    @apply -left-4;
+  }
+
+  .arrow-right {
+    @apply -right-4;
+  }
+}

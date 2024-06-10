@@ -1,0 +1,33 @@
+.work-experience-card{
+    @apply bg-[#130f2a] rounded-[0.65rem] border-[1.5px] border-[#6751b9] my-0 mx-4 p-6
+}
+
+.work-experience-card h6 {
+    @apply text-[1.05rem] font-medium mb-[0.7rem]
+}
+
+.work-duration {
+    @apply inline-block text-[0.7rem] bg-[rgba(103,81,185,0.5)] rounded-md py-[0.4rem] px-[0.6rem] mb-[1.3rem]
+}
+
+.work-experience-card ul li {
+    @apply text-[0.8rem] font-normal mb-[0.5rem] relative ml-10
+}
+
+.work-experience-card ul li:after {
+    @apply content-[''] w-2 h-2 bg-[#6751b9] absolute -left-[1.3rem] top-[0.35rem] rounded-lg
+}
+
+@media (max-width: 768px){
+    .work-experience-card {
+        @apply m-0
+    }
+
+    .work-experience-card h6 {
+        @apply text-[0.95rem]
+    }
+
+    .work-experience-card ul li {
+        @apply text-[0.75rem]
+    }
+}
