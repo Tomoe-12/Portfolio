@@ -2,7 +2,7 @@ import './Hero.css'
 import Assests from '../../assets/assets'
 const Hero = () => {
     return (
-        <section className='hero-container'>
+        <section id='home' className='hero-container'>
             <div className="hero-content">
                 <h2>Building Digital Experiences That Inspire</h2>
                 <p>Passionate Frontend Developer | Transforming ideas into Seamless and Visually Stunning Web Solutions</p>

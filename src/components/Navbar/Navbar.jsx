@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Navbar.css'
 import MoblieNav from './MobileNav/MoblieNav'
+import { Link } from 'react-scroll'
 const Navbar = () => {
 
     const [openMenu, setOpenMenu] = useState(false)
@@ -17,18 +18,18 @@ const Navbar = () => {
                     <img className='logo' src='' alt="" />
                     <ul>
                         <li>
-                            <a className='menu-item' >Home</a>
+                            <Link to='home' className='menu-item' spy={true} smooth={true} duration={400} >Home</Link>
                         </li>
                         <li>
-                            <a className='menu-item' >Skills</a>
+                            <Link to='skills' className='menu-item' spy={true} smooth={true} duration={400} >Skills</Link>
                         </li>
                         <li>
-                            <a className='menu-item' >Work Experience</a>
+                            <Link to='experience' className='menu-item' spy={true} smooth={true} duration={400} >Work Experience</Link>
                         </li>
                         <li>
-                            <a className='menu-item' >Contact Me</a>
+                            <Link to='contact' className='menu-item' spy={true} smooth={true} duration={400} >Contact Me</Link>
                         </li>
-                        <button className='contact-btn btn' onClick={() => {}}>Hire Me</button>
+                        <button className='contact-btn btn' onClick={() => { }}>Hire Me</button>
                     </ul>
 
                     <button className='menu-btn' onClick={toggleMenu}>
