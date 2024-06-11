@@ -1,0 +1,3 @@
+.footer {
+    @apply text-[0.8rem] text-center bg-gradient-to-t from-[#3D3072] to-[#423477] p-4
+}

@@ -1,0 +1,21 @@
+.contact-container{
+    @apply my-16 relative
+}
+
+.contact-container h5{
+    @apply text-2xl font-semibold mb-12
+}
+
+.contact-content{
+    @apply flex gap-12
+}
+
+@media(max-width:768px){
+    .contact-content {
+        @apply flex-col-reverse
+    }
+
+    .contact-container h5 {
+        @apply text-[1.3rem] mb-8
+    }
+}

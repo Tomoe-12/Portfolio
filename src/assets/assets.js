@@ -7,6 +7,8 @@ import frontend from './images/frontend.svg'
 import backend from './images/backend.svg'
 import tools from './images/tools.svg'
 import softSkills from './images/softSkills.svg'
+import email from './images/email.svg'
+import github from './images/github.svg'
 
 
 const Assests = {
@@ -19,6 +21,8 @@ const Assests = {
     backend,
     tools,
     softSkills,
+    email,
+    github,
 }
 
 export default Assests

@@ -1,0 +1,41 @@
+.contact-form-content {
+  @apply w-full;
+}
+
+form {
+  grid-gap: 1.5rem;
+  @apply flex flex-col;
+}
+
+.name-container {
+  grid-gap: 1.5rem;
+  @apply flex items-center;
+}
+
+form input,
+form textarea {
+  @apply flex-1 w-full text-[0.9rem] text-[#fff] bg-[#130f2a] rounded-[0.6rem] border-[1.5px] border-[#6751b9] p-4;
+}
+
+form button {
+  @apply text-base font-medium border-[1.5px] border-[#6751b9] rounded-[0.6rem] bg-gradient-to-t from-[#a892fe] to-[#8064e8] p-[0.7rem]  transition-all duration-300 ease-linear  cursor-pointer;
+}
+
+.form button:hover {
+  @apply text-[#a892fe] bg-transparent;
+}
+
+@media (max-width: 450px) {
+  .name-container {
+    @apply flex-col items-center;
+  }
+
+  form input,
+  form textarea {
+    @apply p-[0.7rem] rounded-[0.3rem]
+  }
+
+  form button {
+    @apply text-[0.9rem] p-[0.7rem] rounded-[0.3rem]
+  }
+}

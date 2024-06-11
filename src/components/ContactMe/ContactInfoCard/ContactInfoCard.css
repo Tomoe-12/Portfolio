@@ -1,0 +1,15 @@
+.contact-details-card {
+  @apply flex flex-col items-center justify-center bg-[#130f2a] rounded-[0.65rem] border-[1.5px] border-[#6751b9] p-6 mb-8;
+}
+
+.contact-details-card .icon {
+  @apply w-16 h-16 flex items-center justify-center rounded-[0.5rem] bg-[#3d3072] mb-[0.8rem];
+}
+
+.icon img {
+  @apply w-[1.8rem] h-auto object-contain;
+}
+
+.contact-details-card p {
+  @apply text-[0.9rem] font-normal
+}
